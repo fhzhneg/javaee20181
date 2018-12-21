@@ -5,10 +5,15 @@ public class Test {
 		display();
 		split();
 		display();
+		split();
 		display();
+		split();
 		display();
+		split();
 		display();
+		split();
 		display();
+		split();
 		display();
 	}
 
