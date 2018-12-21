@@ -7,6 +7,8 @@ public class Test {
 		display();
 		display();
 		display();
+		display();
+		display();
 	}
 
 	public static void display() {
