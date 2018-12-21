@@ -2,6 +2,13 @@ public class Test {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Helloworld");
+		display("fhzheng");
 	}
+	
+	public static void display(String name) {
+		
+		System.out.println(name + "Helloworld");
+	}
+	
+	
 }
