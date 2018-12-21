@@ -3,6 +3,7 @@ public class Test {
 	public static void main(String[] args) {
 
 		display();
+		split();
 		display();
 		display();
 		display();
@@ -20,6 +21,11 @@ public class Test {
 	public static String getName(String name){
 		
 		return name;
+	}
+	
+	public static void split(){
+		
+		System.out.println("================================================");
 	}
 
 }
