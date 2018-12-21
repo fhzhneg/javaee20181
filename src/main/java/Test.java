@@ -3,6 +3,10 @@ public class Test {
 	public static void main(String[] args) {
 
 		display();
+		display();
+		display();
+		display();
+		display();
 	}
 
 	public static void display() {
