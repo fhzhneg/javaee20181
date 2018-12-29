@@ -1,5 +1,6 @@
 package memento;
 
+<<<<<<< HEAD
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -11,6 +12,8 @@ import java.io.ObjectOutputStream;
 import java.util.zip.DeflaterOutputStream;
 import java.util.zip.InflaterInputStream;
 
+=======
+>>>>>>> branch 'master' of https://github.com/fhzhneg/javaee20181.git
 import memento.game.Gamer;
 import memento.game.Memento;
 
@@ -23,6 +26,7 @@ public class Main {
 		//初态
 		Gamer gamer = new Gamer(100);
 		//快照一下
+<<<<<<< HEAD
 		//Memento memento = gamer.createMemento();
 		
 		//从文件中读取起始状态，不一定成功，因为第1次时，没有这个文件
@@ -69,7 +73,16 @@ public class Main {
 			System.out.println();
 		}
 	}
+=======
+		Memento memento = gamer.createMemento();
+		
+		//游戏开始
+		for (int i = 0; i < 100; i++) {
+			System.out.println("==== "+i);			//游戏次数
+			System.out.println("当前状态："+gamer);	//当前态
+>>>>>>> branch 'master' of https://github.com/fhzhneg/javaee20181.git
 
+<<<<<<< HEAD
 	/**
 	 * 将纪念品保存到文件
 	 * @param memento 将要保存的纪念品
@@ -138,5 +151,27 @@ public class Main {
 			e.printStackTrace();
 		}
 		return memento;
+=======
+			gamer.bet();							//进行游戏
+			
+			System.out.println("所有金币为：" + gamer.getMoney()+"个。");
+			
+			//如何处理Memento，即使用记忆
+			if (gamer.getMoney() > memento.getMoney()) {			//优则存
+				System.out.println("     (所持金钱增加了许多，因此保存游戏当前的状态)");
+				memento = gamer.createMemento();
+			} else if (gamer.getMoney() < memento.getMoney()) {		//损则复原
+				System.out.println("     (所持金钱减少了许多，因此将游戏恢复至以前的状态)");
+				gamer.restoreMemento(memento);
+			}
+			
+			//系统等待
+			try {
+				Thread.sleep(100);
+			} catch (Exception e) {
+			}
+			System.out.println();
+		}
+>>>>>>> branch 'master' of https://github.com/fhzhneg/javaee20181.git
 	}
 }

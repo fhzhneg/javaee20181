@@ -65,7 +65,11 @@ public class Gamer {
 		Iterator it = fruits.iterator();
 		while (it.hasNext()) {							//水果记录
 			String f = (String)it.next();
+<<<<<<< HEAD
 			if (f.startsWith("好吃的")) {					//快照中，只保存好吃的水果
+=======
+			if (f.startsWith("好吃的")) {					//只保存好吃的水果
+>>>>>>> branch 'master' of https://github.com/fhzhneg/javaee20181.git
 				m.addFruit(f);
 			}
 		}
@@ -99,7 +103,10 @@ public class Gamer {
 		if (random.nextBoolean()) {
 			prefix = "好吃的";
 		}
+<<<<<<< HEAD
 		// 返回随机获取的水果，可能有前缀，也可能没有前缀
+=======
+>>>>>>> branch 'master' of https://github.com/fhzhneg/javaee20181.git
 		return prefix+fruitsname[random.nextInt(fruitsname.length)];
 	}
 }
